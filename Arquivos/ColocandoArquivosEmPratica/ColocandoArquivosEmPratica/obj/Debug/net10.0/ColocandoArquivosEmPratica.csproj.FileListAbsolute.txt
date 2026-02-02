@@ -1,0 +1,16 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\Registros\registros.txt
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\ColocandoArquivosEmPratica.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\ColocandoArquivosEmPratica.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\ColocandoArquivosEmPratica.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\ColocandoArquivosEmPratica.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\bin\Debug\net10.0\ColocandoArquivosEmPratica.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\refint\ColocandoArquivosEmPratica.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ColocandoArquivosEmPratica.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Arquivos\ColocandoArquivosEmPratica\ColocandoArquivosEmPratica\obj\Debug\net10.0\ref\ColocandoArquivosEmPratica.dll

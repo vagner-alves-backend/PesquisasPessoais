@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\EstudandoArquivos\\EstudandoArquivos\\EstudandoArquivos.csproj": {}
+    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\EstudandoArquivos\\EstudandoArquivos\\EstudandoArquivos.csproj": {
+    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\EstudandoArquivos\\EstudandoArquivos\\EstudandoArquivos.csproj",
-        "projectName": "EstudandoArquivos",
-        "projectPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\EstudandoArquivos\\EstudandoArquivos\\EstudandoArquivos.csproj",
+        "projectUniqueName": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj",
+        "projectName": "ColocandoArquivosEmPratica",
+        "projectPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj",
         "packagesPath": "C:\\Users\\Vágner Alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\EstudandoArquivos\\EstudandoArquivos\\obj\\",
+        "outputPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vágner Alves\\AppData\\Roaming\\NuGet\\NuGet.Config"
