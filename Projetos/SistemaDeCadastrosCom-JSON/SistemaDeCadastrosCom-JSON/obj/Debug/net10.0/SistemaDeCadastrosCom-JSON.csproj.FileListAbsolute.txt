@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\SistemaDeCadastrosCom-JSON.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\SistemaDeCadastrosCom-JSON.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\SistemaDeCadastrosCom-JSON.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\SistemaDeCadastrosCom-JSON.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\SistemaDeCadastrosCom-JSON.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\refint\SistemaDeCadastrosCom-JSON.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\ref\SistemaDeCadastrosCom-JSON.dll

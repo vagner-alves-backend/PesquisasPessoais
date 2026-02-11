@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj": {}
+    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj": {
+    "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj",
-        "projectName": "ColocandoArquivosEmPratica",
-        "projectPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica.csproj",
+        "projectUniqueName": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON.csproj",
+        "projectName": "SistemaDeCadastrosCom-JSON",
+        "projectPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON.csproj",
         "packagesPath": "C:\\Users\\Vágner Alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Arquivos\\ColocandoArquivosEmPratica\\ColocandoArquivosEmPratica\\obj\\",
+        "outputPath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vágner Alves\\AppData\\Roaming\\NuGet\\NuGet.Config"
