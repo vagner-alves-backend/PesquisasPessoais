@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SistemaDeCadastrosCom_JSON.Models
 {
-    public static class MenuDeNavegacao
+    public class MenuDeNavegacao : Login
     {
-        private static string? _opcaoMenu = "";
-        private static int _opcaoSelecionada = 0;
-        private static bool _isValid = true;
-        public static int MunuInicial()
+        private string? _opcaoMenu = "";
+        private int _opcaoSelecionada = 0;
+        private bool _isValid = true;
+        public void MunuInicial()
         {
             Console.Write(
                 "---Selecione seu nivel de login..\n"+
@@ -37,8 +37,7 @@ namespace SistemaDeCadastrosCom_JSON.Models
                     Console.Write("Favor informe um number valid..: ");
                 }
             } while (_isValid);
-
-            return _opcaoSelecionada;
+            Logar(_opcaoSelecionada);
         }
     }
 }

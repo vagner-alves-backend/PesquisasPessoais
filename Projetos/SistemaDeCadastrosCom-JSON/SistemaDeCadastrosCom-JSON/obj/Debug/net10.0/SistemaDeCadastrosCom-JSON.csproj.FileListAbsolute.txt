@@ -13,3 +13,6 @@ C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\
 C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.pdb
 C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.genruntimeconfig.cache
 C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\ref\SistemaDeCadastrosCom-JSON.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaDeCadastrosCom-JSON.csproj.AssemblyReference.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeCadastrosCom-JSON\SistemaDeCadastrosCom-JSON\obj\Debug\net10.0\SistemaD.A3DB31F6.Up2Date

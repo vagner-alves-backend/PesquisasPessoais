@@ -1,110 +1,105 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http.Json;
+using System.Runtime;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace SistemaDeCadastrosCom_JSON.Models
 {
-    public class Login : Cadastro
+    public class Login
     {
-        private string[] _namesReistrados = [];
-        private string[] _senhasRegistradas = [];
-        private int _loginType = 0;
-        private string? _name = "";
-        private string? _senha = "";
-        private string _caminho = "";
-        private string _caminhoSenha = "";
+        private string _filePath = "";
+        public string? Name = "";
+        public string? Senha = "";
 
         public void Logar(int login)
         {
-            _loginType = login;   
-            string? nivelDeLogin = login switch
+            FilePath(login);
+            switch (login)
             {
-                1 => "Aluno",
-                2 => "Professor",
-                3 => "Admin",
-                _ => "NaN"
-            };
-            Console.WriteLine($"---Login do {nivelDeLogin}..");
-            Console.Write("Name..: ");
-            this._name = Console.ReadLine();
-            Console.Write("Senha.: ");
-            this._senha = Console.ReadLine();
-            Console.WriteLine("---------------------------------");
-
-            bool loginValid = LoginValid();
-            if (loginValid)
-            {
-                Console.WriteLine("Login encontrado...");
-            } else
-            {
-                Console.WriteLine("Login não encontrado, deseja cadastrar o usuario [s/n]: ");
-                string? cadastrar = Console.ReadLine();
-                if (cadastrar == "s" || cadastrar == "S")
-                {
-                    File.AppendAllLines(_caminho, [_name ?? "NaN"]);
-                    File.AppendAllLines(_caminhoSenha, [_senha ?? "NaN"]);
-                } else
-                {
-                    Console.WriteLine("\t- User não encontrado..");
-                }
+                case 1:
+                    Aluno();
+                    break;
+                case 2:
+                    Professor();
+                    break;
+                case 3:
+                    Admin();
+                    break;
+                default:
+                    Console.WriteLine("Nivel de acesso não encontrado.");
+                    break;
             }
         }
 
-        private bool LoginValid()
+        private void Aluno()
         {
-            bool isValid = false;
-            PasseList();
-            int position = 0;
-            foreach (string? nome in _namesReistrados)
+            bool _continue = true;
+            ListaDados<Aluno> aluno = new();
+            if (File.Exists(_filePath))
             {
-                if (nome == this._name)
-                {
-                    isValid = this._senhasRegistradas[position] == this._senha;
-                }
+                string jsonSalvo = File.ReadAllText(_filePath);
+                aluno = JsonConvert.DeserializeObject<ListaDados<Aluno>>(jsonSalvo) ?? new();   
             }
-            return isValid;
+            do
+            {                
+                Console.WriteLine("--Login Aluno..");
+                Console.Write("Name..: ");
+                Name = Console.ReadLine();
+                Console.Write("Senha.: ");
+                Senha = Console.ReadLine();
+
+                bool encontrado = false;
+                if (aluno.ContemElementos)
+                {
+                    foreach (Aluno registros in aluno)
+                    {
+                        if (registros.GetName() == Name && registros.GetSenha() == Senha)
+                        {
+                            Console.WriteLine("Registro encontrado.");
+                            encontrado = true;
+                        }
+                    }   
+                } 
+
+                if (!encontrado) {
+                    Console.WriteLine("--Deseja cadastrar o aluno [s/n]: ");
+                    string? cadastreAluno = Console.ReadLine();
+                    if (cadastreAluno?.ToLower() == "s")
+                    {
+                        aluno.AddRegistro(new Aluno(Name, Senha));
+                        string serializacao = JsonConvert.SerializeObject(aluno);
+                        File.WriteAllText(_filePath, serializacao);
+                    }
+                    _continue = false;
+                }
+            } while(_continue);
         }
 
-        private void PasseList()
+        private void Professor()
         {
-            FilePath(_loginType);
-            _namesReistrados = File.ReadAllLines(_caminho);
-            _senhasRegistradas = File.ReadAllLines(_caminhoSenha);
+            ListaDados<Professor> professor = new();
         }
 
-        // private void FilePath(int login)
-        // {
-        //     _caminho = login switch
-        //     {
-        //         1 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\alunos.json",
-        //         2 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\professores.json",
-        //         3 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\admin.json",
-        //         _ => ""
-        //     };
-        // }
+        private void Admin()
+        {
+            ListaDados<Admin> admin = new();
+        }
 
         private void FilePath(int login)
         {
-            _caminho = login switch
+            _filePath = login switch
             {
-                1 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\aluno.txt",
-                2 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\admin.txt",
-                3 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\professor.txt",
+                1 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\alunos.json",
+                2 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\professores.json",
+                3 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\admin.json",
                 _ => ""
             };
-
-            _caminhoSenha = login switch
-            {
-                1 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\alunoSenha.txt",
-                2 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\adminSenha.txt",
-                3 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Arquivos\\professorSenha.txt",
-                _ => ""
-            };
-        }
-        
+        }        
     }
 }

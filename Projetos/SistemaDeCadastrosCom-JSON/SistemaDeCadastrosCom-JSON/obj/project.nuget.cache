@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QtHLL+Wx+/Q=",
+  "dgSpecHash": "HRbUW4lciUQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
