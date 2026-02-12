@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaDeCadastrosCom-JSON")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6ed16ccdd093fbf3b524b930fca83ab0ed63d12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed4832a344228cb09989510838535b11bbde42eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaDeCadastrosCom-JSON")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaDeCadastrosCom-JSON")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

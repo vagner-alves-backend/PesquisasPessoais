@@ -6,16 +6,14 @@ using Newtonsoft.Json;
 
 namespace SistemaDeCadastrosCom_JSON.Models
 {
-    [JsonObject]
     public class Aluno(string? name, string? senha)
     {
-        [JsonProperty("Name")]
-        private readonly string? _name = name;
-        [JsonProperty("Senha")]
-        private readonly string? _senha = senha;
-        public Aluno() : this("NaN", "NaN") {}
-
-        public string? GetName() => _name;
-        public string? GetSenha() => _senha;
+        private List<Aluno> _alunosRegistros = [];
+        public string? Name = name;
+        public string? Senha = senha;
+        public Aluno() : this ("NaN", "NaN") {}
+        public List<Aluno> RegistrosDosAlunos() => _alunosRegistros;
+        public void AddAlunoRegistro(Aluno aluno) => _alunosRegistros.Add(aluno);
+        public void SetList(string json) => _alunosRegistros = JsonConvert.DeserializeObject<List<Aluno>>(json) ?? [];
     }
 }

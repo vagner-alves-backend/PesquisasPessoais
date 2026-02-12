@@ -1,1 +1,18 @@
-[{}]
+[
+  {
+    "Name": "Vágner Alves",
+    "Senha": "123"
+  },
+  {
+    "Name": "Lucas Souza",
+    "Senha": "321"
+  },
+  {
+    "Name": "Laura",
+    "Senha": "345"
+  },
+  {
+    "Name": "Mariana",
+    "Senha": "542"
+  }
+]

@@ -1,11 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Net.Http.Json;
-using System.Runtime;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -13,14 +9,11 @@ namespace SistemaDeCadastrosCom_JSON.Models
 {
     public class Login
     {
-        private string _filePath = "";
-        public string? Name = "";
-        public string? Senha = "";
-
-        public void Logar(int login)
+        private int _levelLogin;
+        public void Logar()
         {
-            FilePath(login);
-            switch (login)
+            _levelLogin = Menu.GetLevelLogin();
+            switch(_levelLogin)
             {
                 case 1:
                     Aluno();
@@ -28,78 +21,59 @@ namespace SistemaDeCadastrosCom_JSON.Models
                 case 2:
                     Professor();
                     break;
-                case 3:
-                    Admin();
-                    break;
-                default:
-                    Console.WriteLine("Nivel de acesso não encontrado.");
-                    break;
             }
         }
 
-        private void Aluno()
+        private static void Aluno()
         {
-            bool _continue = true;
-            ListaDados<Aluno> aluno = new();
-            if (File.Exists(_filePath))
-            {
-                string jsonSalvo = File.ReadAllText(_filePath);
-                aluno = JsonConvert.DeserializeObject<ListaDados<Aluno>>(jsonSalvo) ?? new();   
-            }
-            do
-            {                
-                Console.WriteLine("--Login Aluno..");
-                Console.Write("Name..: ");
-                Name = Console.ReadLine();
-                Console.Write("Senha.: ");
-                Senha = Console.ReadLine();
+            AlunoCommos.Deserializacao();
 
-                bool encontrado = false;
-                if (aluno.ContemElementos)
+            Console.WriteLine("\t--Login Aluno..");
+            Console.Write("Name..: ");
+            string? name = Console.ReadLine();
+            Console.Write("Senha.: ");
+            string? senha = Console.ReadLine();
+
+            if (AlunoCommos.Exist(new(name, senha)))
+            {
+                Console.WriteLine("Registro valido.");
+            } else
+            {
+                Console.Write("Registro invalido, o registro informado não foi encontrado.\nDeseja cadastrar o usuario informado [s/n]: ");
+                string? cadastrar = Console.ReadLine();
+                if (cadastrar?.ToLower() == "s")
                 {
-                    foreach (Aluno registros in aluno)
-                    {
-                        if (registros.GetName() == Name && registros.GetSenha() == Senha)
-                        {
-                            Console.WriteLine("Registro encontrado.");
-                            encontrado = true;
-                        }
-                    }   
-                } 
-
-                if (!encontrado) {
-                    Console.WriteLine("--Deseja cadastrar o aluno [s/n]: ");
-                    string? cadastreAluno = Console.ReadLine();
-                    if (cadastreAluno?.ToLower() == "s")
-                    {
-                        aluno.AddRegistro(new Aluno(Name, Senha));
-                        string serializacao = JsonConvert.SerializeObject(aluno);
-                        File.WriteAllText(_filePath, serializacao);
-                    }
-                    _continue = false;
+                    AlunoCommos.AddAluno(new(name, senha));
                 }
-            } while(_continue);
+            }
+            AlunoCommos.Serializacao();
         }
 
-        private void Professor()
+        private static void Professor()
         {
-            ListaDados<Professor> professor = new();
-        }
+            ProfessorCommos.Deserializacao();
 
-        private void Admin()
-        {
-            ListaDados<Admin> admin = new();
-        }
+            Console.WriteLine("\t--Login Professor..");
+            Console.Write("Name..: ");
+            string? name = Console.ReadLine();
+            Console.Write("Senha.: ");
+            string? senha = Console.ReadLine();
 
-        private void FilePath(int login)
-        {
-            _filePath = login switch
+            if (ProfessorCommos.Exist(new(name, senha)))
             {
-                1 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\alunos.json",
-                2 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\professores.json",
-                3 => "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastrosCom-JSON\\SistemaDeCadastrosCom-JSON\\Registros\\admin.json",
-                _ => ""
-            };
-        }        
+                Console.WriteLine("Registro valido.");
+            } else
+            {
+                Console.Write("Registro invalido, o registro informado não foi encontrado.\nDeseja cadastrar o usuario informado [s/n]: ");
+                string? cadastrar = Console.ReadLine();
+                if (cadastrar?.ToLower() == "s")
+                {
+                    ProfessorCommos.AddProfessor(new(name, senha));
+                }
+            }
+
+            ProfessorCommos.Serializacao();
+        }
     }
 }
+
