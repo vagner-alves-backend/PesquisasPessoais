@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\bin\Debug\net10.0\Main.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\bin\Debug\net10.0\Main.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\bin\Debug\net10.0\Main.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\bin\Debug\net10.0\Main.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\bin\Debug\net10.0\Main.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\refint\Main.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\Main.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\EstudosAleatorios\Comandos\FirstOrDefault\Main\obj\Debug\net10.0\ref\Main.dll
