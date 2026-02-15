@@ -15,26 +15,11 @@ namespace SistemaDeCadastrosCom_JSON.Models
         private static readonly Aluno _aluno = new();
         public static bool Exist(Aluno aluno)
         {
-            _registroEncontrado = false;
-            foreach (Aluno registro in _aluno.RegistrosDosAlunos())
-            {
-                if (registro.Name == aluno.Name && registro.Senha == aluno.Senha)
-                {
-                    _registroEncontrado = true;
-                    break;
-                }
-            }
-
+            _registroEncontrado = _aluno.RegistrosDosAlunos().Any(p => p.Name == aluno.Name && p.Senha == aluno.Senha);
             if (!_registroEncontrado)
             {
-                foreach (Aluno registro in _aluno.RegistrosDosAlunos())
-                {
-                    if (registro.Name == aluno.Name)
-                    {
-                        SenhaIncorreta(aluno.Name);
-                        break;
-                    }
-                }
+                _registroEncontrado = _aluno.RegistrosDosAlunos().Any(p => p.Name == aluno.Name);
+                if (_registroEncontrado) {SenhaIncorreta(aluno.Name);}
             }
             return  _registroEncontrado;
         }

@@ -13,26 +13,11 @@ namespace SistemaDeCadastrosCom_JSON.Models
         private static bool _registroEncontrado = false;
         public static bool Exist(Professor professor)
         {  
-            _registroEncontrado = false;
-            foreach (Professor registro in _professor.GetListRegistrosProfessor())
-            {
-                if (registro.Name == professor.Name && registro.Senha == professor.Senha)
-                {
-                    _registroEncontrado = true;
-                    break;
-                }
-            }
-
+            _registroEncontrado = _professor.GetListRegistrosProfessor().Any(p => p.Name == professor.Name && p.Senha == professor.Senha);
             if (!_registroEncontrado)
             {
-                foreach (Professor registro in _professor.GetListRegistrosProfessor())
-                {
-                    if (registro.Name == professor.Name)
-                    {
-                        SenhaIncorreta(professor.Name);
-                        break;
-                    }
-                }
+                _registroEncontrado = _professor.GetListRegistrosProfessor().Any(p => p.Name == professor.Name);
+                if (_registroEncontrado) {SenhaIncorreta(professor.Name);}
             }
             return _registroEncontrado;
         } 
