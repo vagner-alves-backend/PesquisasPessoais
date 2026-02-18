@@ -1,29 +1,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Main.Models
 {
     public class Aluno : Pessoa
     {
-        private string? _cursando;
-        public string? Cursando
+        private string? _curso;
+        public string? Curso
         {
-            get => _cursando;
+            get => _curso;
             set
             {
-                if (string.IsNullOrEmpty(value)) throw new Exception("Curso Null.");
-                _cursando = value;
+                if (string.IsNullOrWhiteSpace(value)) throw new Exception ("Value is null.");
+                _curso = value;
             }
         }
 
-        public Aluno(string? name, string? password, string? cursando) : base ()
+        //[System.Text.Json.Serialization.JsonConstructor]
+        public Aluno(string? name, string? password, string? curso) : base(name, password)
         {
-            this.Name = name;
-            this.Password = password;
-            this.Cursando = cursando;
+            this.Curso = curso;
         }
-        public string? GetCurso() => _cursando;
     }
 }
