@@ -1,10 +1,13 @@
 ﻿using Main.Models;
 
 Console.Clear();
-
 Faculdade faculdade = new();
-faculdade.AddProfessor();
-faculdade.AddProfessor();
-faculdade.AddProfessor();
+Login login = new();
 
+faculdade.AddProfessor();
 faculdade.PrintList();
+faculdade.Login();
+
+Console.ReadLine();
+login.Logar();
+
