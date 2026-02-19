@@ -7,20 +7,20 @@ namespace Main.Models
 {
     public class Diretor : Funcionario
     {
-        private string? _nivel;
-        public string? Nivel
+        private string? _cargo;
+        public string? Cargo
         {
-            get => _nivel;
+            get => _cargo;
             set
             {
                 if (string.IsNullOrWhiteSpace(value)) throw new Exception ("Favo informe o nivel do cargo da diretoria.");
-                _nivel = value;
+                _cargo = value;
             }
         }
         
         public Diretor(string? name, string? password, string? salario, string? cargo) : base (name, password, salario) 
         {
-            this.Nivel = cargo;
+            this.Cargo = cargo;
         }
     }
 }

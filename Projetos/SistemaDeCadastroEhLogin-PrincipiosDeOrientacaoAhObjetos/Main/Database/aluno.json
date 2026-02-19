@@ -13,5 +13,10 @@
     "Curso": "Biologia",
     "Name": "Sofia",
     "Password": "102030"
+  },
+  {
+    "Curso": "Filosofia",
+    "Name": "Gustavo Souza",
+    "Password": "102030"
   }
 ]
