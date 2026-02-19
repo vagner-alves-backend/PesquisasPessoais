@@ -2,11 +2,16 @@
   {
     "Curso": "Ciências da Computação",
     "Name": "Vágner Alves",
-    "Password": "120987"
+    "Password": "102030"
   },
   {
-    "Curso": "Filosofia",
+    "Curso": "Finanças",
     "Name": "Lucas Mendes",
-    "Password": "123456"
+    "Password": "102030"
+  },
+  {
+    "Curso": "Biologia",
+    "Name": "Sofia",
+    "Password": "102030"
   }
 ]
