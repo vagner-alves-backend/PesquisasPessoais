@@ -58,7 +58,6 @@ namespace Main.Models
 
             Desserializacao();
             bool login = Login_Valid(login_user.nivel, _name, _password);
-            Console.WriteLine(login);
             login_user.logado = login;
             if (login) {LoginUser();}
         }
@@ -136,6 +135,7 @@ namespace Main.Models
         }
         private void Student_Panel()
         {
+            Console.Clear();
             Console.Write(
                 "\tPainel do Aluno...\n"+
                 "1 °Ver lista de matérias\n"+
