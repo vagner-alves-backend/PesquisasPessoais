@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Main.Models
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
         private string? _name;
         private string? _password;

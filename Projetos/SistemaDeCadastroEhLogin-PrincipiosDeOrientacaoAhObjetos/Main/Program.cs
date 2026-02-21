@@ -24,7 +24,28 @@ while (_continue)
             faculdade.LoginUser();
             break;
         case "2":
-            faculdade.RegisterUser();
+            Console.Write(
+                "\t---Cadastre um..\n"+
+                "1 - Professor\n"+
+                "2 - Aluno\n"+
+                "-->"
+            );
+            string? user = Console.ReadLine() switch
+            {
+                "1" => "Professor",
+                "2" => "Aluno",
+                _ => "NaN"
+            };
+            Console.WriteLine("------------------------");
+
+            if (user != "NaN")
+            {
+                faculdade.RegisterUser(user);
+            } else
+            {
+                Console.WriteLine("Opção não encontrada..");
+                Console.WriteLine("------------------------");
+            }
             break;
         case "3":
             _continue = false;

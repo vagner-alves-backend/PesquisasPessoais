@@ -9,71 +9,56 @@ namespace Main.Models
 {
     public class Faculdade 
     {
-        private List<Aluno> aluno = [];
-        private List<Professor> professor = [];
-        private List<Diretor> diretor = [];
+        private readonly Diretor diretorUS = new("name", "102030", "1500", "professor"); 
+        private readonly Professor professorUS = new("name", "102030", "matéria", "1500");
 
-        protected void AlunoRegister(string? name, string? pass, string? curso) => aluno.Add(new(name, pass, curso));
-        protected void Remover(string? name, string? pass, string? nivel)
+        protected void AlunoRegister(string? name, string? pass, string? curso) => professorUS.AddAluno(name, pass, curso);
+        protected bool Remover(string? name, string? pass, string? nivel)
         {
-            switch (nivel)
+            bool remove = nivel switch
             {
-                case "Aluno":
-                    Aluno? alunoAT = aluno.FirstOrDefault(p => p.Name == name && p.Password == pass);
-                    if (alunoAT != null)
-                    {
-                        aluno.Remove(alunoAT);
-                        Console.WriteLine("Removido co sucesso.");
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Nivel não encontrado.");
-                    break;
-            }
+                "Professor" => diretorUS.Remover(name, pass),
+                "Aluno" => professorUS.Remover(name, pass),
+                _ => false
+            };
+            return remove;
         }
-        protected void ProfessorRegister(string? name, string? password, string? materia, string? salario) => professor.Add(new(name, password, materia, salario));
-        protected void DiretorRegister(string? name, string? password, string? salario, string? cargo) => diretor.Add(new(name, password, salario, cargo));
-        protected void PrintList(string? nivel)
-        {
-            Console.WriteLine($"\t---Lista de {nivel}...");
-            switch (nivel)
-            {
-                case "Aluno":
-                    foreach (Aluno alunoAT in aluno)
-                    {
-                        Console.WriteLine($"{alunoAT.Name} - {alunoAT.Password} - {alunoAT.Curso}");
-                    }
-                    break;
-            }
-            Console.WriteLine("----------------------------------");
-        }
-        public bool Login_Valid(string? nivel, string? name, string? pass)
+        protected bool LoginValid(string? name, string? pass, string? nivel)
         {
             bool login = nivel switch
             {
-                "3" => Login.Login_Aluno(aluno, name, pass),
-                "2" => Login.Login_Professor(professor, name, pass),
-                "1" => Login.Login_Diretor(diretor, name, pass),
+                "Aluno" => professorUS.BusqueAluno(name, pass) != null,
+                "Professor" => diretorUS.BusqueProfessor(name, pass) != null,
                 _ => false
             };
+
             return login;
+        }
+        protected void ProfessorRegister(string? name, string? password, string? materia, string? salario) => diretorUS.AddProfessor(name, password, materia, salario);
+        protected void PrintList(string? lista)
+        {
+            switch (lista)
+            {
+                case "Aluno":
+                    professorUS.ListaDeAlunos();
+                    break;
+                case "Professor":
+                    diretorUS.ListaDeProfessores();
+                    break;
+                default:
+                    Console.WriteLine("Lista não encontrada.");
+                    break;
+            }
         }
         public void Desserializacao()
         {
-            diretor = Json.Desserializacao_Diretor() ?? [];
-            professor = Json.Desserializacao_Professor() ?? [];
-            aluno = Json.Desserializacao_Aluno() ?? [];
+            diretorUS.Deserializacao_Professor();
+            professorUS.Desserialize_Aluno();
         }
         public void Serializacao()
         {
-            string? alunoDados = JsonConvert.SerializeObject(aluno, Formatting.Indented);
-            Json.Serializacao(alunoDados, "Aluno");
-
-            string? professorDados = JsonConvert.SerializeObject(professor, Formatting.Indented);
-            Json.Serializacao(professorDados, "Professor");
-
-            string? diretorDados = JsonConvert.SerializeObject(diretor, Formatting.Indented);
-            Json.Serializacao(diretorDados, "Diretor");
+            diretorUS.Serializacao_ProfessorList();
+            professorUS.Serializacao_Aluno();
         }
     }
 }
