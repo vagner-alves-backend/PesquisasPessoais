@@ -40,5 +40,7 @@ namespace Main.Models
             this.Name = name;
             this.Password = password;
         }
+        public string? GetName() => _name;
+        public string? GetPassword() => _password;
     }
 }

@@ -25,5 +25,6 @@ namespace Main.Models
         {
             this.Curso = curso;
         }
+        public string? GetCurso() => _curso;
     }
 }

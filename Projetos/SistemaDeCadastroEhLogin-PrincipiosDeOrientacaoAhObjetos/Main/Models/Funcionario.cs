@@ -29,5 +29,6 @@ namespace Main.Models
         {
             this.Salario = salario;
         }
+        public string? GetSalario() => _salario;
     }
 }

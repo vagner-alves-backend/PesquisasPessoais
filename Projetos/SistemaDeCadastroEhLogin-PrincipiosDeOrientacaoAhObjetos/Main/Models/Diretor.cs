@@ -25,7 +25,7 @@ namespace Main.Models
             this.Cargo = cargo;
         }
         
-        
+        public string? GetCargo() => _cargo;
         public void AddProfessor(string? name, string? pass, string? materia, string? salario) => _professores.Add(new(name, pass, materia, salario));
         public Professor? BusqueProfessor(string? name, string? pass) => _professores.FirstOrDefault(p => p.Name == name && p.Password == pass);
         public bool Remover(string? name, string? pass)
@@ -47,10 +47,10 @@ namespace Main.Models
             foreach (Professor professor in _professores)
             {
                 Console.WriteLine(
-                    $"Name:     {professor.Name}\n"+
-                    $"Password: {professor.Password}\n"+
-                    $"Matéria:  {professor.Materia}\n"+
-                    $"Salario:  {professor.Salario}\n"+
+                    $"Name:     {professor.GetName()}\n"+
+                    $"Password: {professor.GetPassword()}\n"+
+                    $"Matéria:  {professor.GetMateria()}\n"+
+                    $"Salario:  {professor.GetSalario()}\n"+
                     "......................................"
                 );
             }

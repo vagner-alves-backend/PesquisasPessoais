@@ -31,7 +31,7 @@ namespace Main.Models
             {
                 "Aluno" => professorUS.BusqueAluno(name, pass) != null,
                 "Professor" => diretorUS.BusqueProfessor(name, pass) != null,
-                "Diretor" => diretorAtual.Name == name && diretorAtual.Password == pass,
+                "Diretor" => diretorAtual.GetName() == name && diretorAtual.GetPassword() == pass,
                 _ => false
             };
 

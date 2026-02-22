@@ -24,6 +24,7 @@ namespace Main.Models
             this.Materia = materia;
         }
 
+        public string? GetMateria() => _materia;
         public void AddAluno(string? name, string? pass, string? curso) => _aluno.Add(new(name, pass, curso));
         public Aluno? BusqueAluno(string? name, string? pass) => _aluno.FirstOrDefault(p => p.Name == name && p.Password == pass);
         public bool Remover(string? name, string? pass)
@@ -45,9 +46,9 @@ namespace Main.Models
             foreach (Aluno aluno in _aluno)
             {
                 Console.WriteLine(
-                    $"Name:     {aluno.Name}\n"+
-                    $"Password: {aluno.Password}\n"+
-                    $"Curso:    {aluno.Curso}\n"+
+                    $"Name:     {aluno.GetName()}\n"+
+                    $"Password: {aluno.GetPassword()}\n"+
+                    $"Curso:    {aluno.GetCurso()}\n"+
                     "....................................."
                 );
             }
