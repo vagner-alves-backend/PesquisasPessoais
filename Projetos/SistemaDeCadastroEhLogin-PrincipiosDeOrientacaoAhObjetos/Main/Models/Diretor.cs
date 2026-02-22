@@ -25,6 +25,7 @@ namespace Main.Models
             this.Cargo = cargo;
         }
         
+        
         public void AddProfessor(string? name, string? pass, string? materia, string? salario) => _professores.Add(new(name, pass, materia, salario));
         public Professor? BusqueProfessor(string? name, string? pass) => _professores.FirstOrDefault(p => p.Name == name && p.Password == pass);
         public bool Remover(string? name, string? pass)
@@ -50,7 +51,7 @@ namespace Main.Models
                     $"Password: {professor.Password}\n"+
                     $"Matéria:  {professor.Materia}\n"+
                     $"Salario:  {professor.Salario}\n"+
-                    ".........................................."
+                    "......................................"
                 );
             }
             Console.WriteLine("--------------------------------------");

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.IO.Compression;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -21,6 +22,7 @@ namespace Main.Models
                 switch (loginUser.nivel)
                 {
                     case "Diretor":
+                        PainelDoDiretor();
                         break;
                     case "Professor":
                         PainelDoProfessor();
@@ -116,7 +118,7 @@ namespace Main.Models
             {
                 Console.Clear();
                 Console.WriteLine("--Não foi possível cadastrar user..");
-                Console.WriteLine($"\t[Erro]: {ex.Message}");
+                Console.WriteLine($"[Erro]: {ex.Message}");
                 Console.WriteLine("------------------------------------------");
             }
 
@@ -126,6 +128,9 @@ namespace Main.Models
         private void PainelDoAluno()
         {
             Console.Clear();
+            string? option = "";
+            string? senha = "";
+
             bool remove = false;
 
             do{
@@ -136,8 +141,8 @@ namespace Main.Models
                     "3 °Cancelar matricula\n"+
                     "--> "
                 );
-                string? option = Console.ReadLine();
-                Console.WriteLine("--------------------------------------");
+                option = Console.ReadLine();
+                Console.Clear();
 
                 switch (option)
                 {
@@ -147,7 +152,15 @@ namespace Main.Models
                         loginUser.logado = false;
                         break;
                     case "3":
-                        remove = Remover(_name, _password, loginUser.nivel);  
+                        Console.Write($"Aluno {_name}, favor informe sua senha: ");
+                        senha = Console.ReadLine();
+                        if (senha == _password)
+                        {
+                            remove = Remover(_name, _password, loginUser.nivel);  
+                        } else
+                        {
+                            Console.WriteLine("Senha incorreta, favor tente novamente.");
+                        }
                         break;
                     default:
                         Console.WriteLine("Opção não encontrada...");
@@ -165,6 +178,12 @@ namespace Main.Models
         private void PainelDoProfessor()
         {
             Console.Clear();
+
+            string? nameAtual = _name;
+            string? passwordAtual = _password;
+            string? opcao = "";
+            string? senhaAnterior = "";
+
             bool remove = false;
             do {
                 Console.Write(
@@ -176,7 +195,7 @@ namespace Main.Models
                     "4 - Deletar Conta\n"+
                     "--> "
                 );
-                string? opcao = Console.ReadLine();
+                opcao = Console.ReadLine();
                 Console.WriteLine("--------------------------------------");
                 Console.Clear();
 
@@ -192,7 +211,15 @@ namespace Main.Models
                         loginUser.logado = false;
                         break;
                     case "4":
-                        remove = Remover(_name, _password, "Professor");
+                        Console.Write($"Professor {nameAtual}, favor informe sua senha: ");
+                        senhaAnterior = Console.ReadLine();
+                        if (senhaAnterior == passwordAtual)
+                        {
+                            remove = Remover(_name, _password, "Professor");
+                        } else
+                        {
+                            Console.WriteLine("Senha incorreta, favor tente novamente.");
+                        }
                         break;
                     default:
                         Console.WriteLine("Opção não encontrada.");
@@ -204,6 +231,80 @@ namespace Main.Models
                     loginUser.logado = false;
                     Serializacao();
                     Desserializacao(); 
+                }
+            } while (loginUser.logado);
+        }
+        private void PainelDoDiretor()
+        {
+            Console.Clear();
+
+            string? nameAtual = _name;
+            string? passwordAtual = _password;
+
+            string? name = "";
+            string? pass = "";
+            string? salario = "";
+            string? passAnterior = "";
+            string? option = "";
+
+            bool remove = false;
+            do {
+                Console.Write(
+                    "\t---Painel do Diretor...\n"+
+                    "1 °Cadastrar Professor\n"+
+                    "2 °Deletar um professor\n"+
+                    "3 °Lista de professores\n"+
+                    "4 °Deslogar\n"+
+                    "5 °Trocar diretor\n"+
+                    "--> "
+                );
+                option = Console.ReadLine();
+                Console.Clear();
+
+                switch (option)
+                {
+                    case "1":
+                        RegisterUser("Professor");
+                        break;
+                    case "2":
+                        remove = Remover(_name, _password, "Professor");
+                        break;
+                    case "3":
+                        PrintList("Professor");
+                        break;
+                    case "4":
+                        loginUser.logado = false;
+                        break;
+                    case "5":
+                        Console.WriteLine("\t---Troque o diretor...");
+                        Console.Write("Name: ");
+                        name = Console.ReadLine();
+                        Console.Write("Password: ");
+                        pass = Console.ReadLine();
+                        Console.Write("Salario: ");
+                        salario = Console.ReadLine();
+
+                        bool valido = EhPossivelTrocarDiretor(name, pass, "Diretor", salario);
+                        if (valido)
+                        {
+                            Console.Write(
+                                "----------------------------------------------------\n"+
+                                $"Diretor {nameAtual}, informe sua senha: "
+                            );
+                            passAnterior = Console.ReadLine();
+                            if (passwordAtual == passAnterior)
+                            {
+                                DiretorAtual(name, pass, "Diretor", salario);
+                                loginUser.logado = false;
+                                Console.WriteLine("....................................................");
+                                Console.WriteLine("O novo diretor foi adicionado..");
+                            } else
+                            {
+                                Console.WriteLine("Senha incorreta, favor tente novamente.");
+                            }
+                            Console.WriteLine("----------------------------------------------------");
+                        }
+                        break;
                 }
             } while (loginUser.logado);
         }

@@ -12,7 +12,7 @@ namespace Main.Models
         private static readonly string _pathFileAlunos = "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastroEhLogin-PrincipiosDeOrientacaoAhObjetos\\Main\\Database\\aluno.json";
         private static readonly string _pathFileProfessor = "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastroEhLogin-PrincipiosDeOrientacaoAhObjetos\\Main\\Database\\professor.json";
         private static readonly string _pathFileDiretor = "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Projetos\\SistemaDeCadastroEhLogin-PrincipiosDeOrientacaoAhObjetos\\Main\\Database\\diretor.json";
-        public static void Serializacao(string dados, string level) 
+        public static void Serializacao(string? dados, string? level) 
         {
             switch (level)
             {
@@ -32,9 +32,9 @@ namespace Main.Models
             string dados = File.ReadAllText(_pathFileProfessor);
             return JsonConvert.DeserializeObject<List<Professor>>(dados) ?? [];
         }
-        public static List<Diretor> Desserializacao_Diretor() {
+        public static Diretor Desserializacao_Diretor() {
             string dados = File.ReadAllText(_pathFileDiretor);
-            return JsonConvert.DeserializeObject<List<Diretor>>(dados) ?? [];
+            return JsonConvert.DeserializeObject <Diretor>(dados) ?? new("Tota", "102030", "3000", "Diretor");
         }
     }
 }

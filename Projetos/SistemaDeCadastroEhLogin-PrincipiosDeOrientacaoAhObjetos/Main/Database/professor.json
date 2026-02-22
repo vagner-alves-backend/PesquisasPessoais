@@ -1,8 +1,14 @@
 [
   {
+    "Materia": "Geografia",
+    "Salario": "2500",
+    "Name": "Luciene",
+    "Password": "302010"
+  },
+  {
     "Materia": "Matématica",
-    "Salario": "3000",
-    "Name": "Sabrine",
-    "Password": "102030"
+    "Salario": "2800",
+    "Name": "Sabrine Soares",
+    "Password": "403020"
   }
 ]
