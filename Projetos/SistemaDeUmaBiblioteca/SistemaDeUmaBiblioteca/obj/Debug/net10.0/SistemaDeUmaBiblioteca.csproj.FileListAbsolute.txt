@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\bin\Debug\net10.0\SistemaDeUmaBiblioteca.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\bin\Debug\net10.0\SistemaDeUmaBiblioteca.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\bin\Debug\net10.0\SistemaDeUmaBiblioteca.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\bin\Debug\net10.0\SistemaDeUmaBiblioteca.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\bin\Debug\net10.0\SistemaDeUmaBiblioteca.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\refint\SistemaDeUmaBiblioteca.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\SistemaDeUmaBiblioteca.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\SistemaDeUmaBiblioteca\SistemaDeUmaBiblioteca\obj\Debug\net10.0\ref\SistemaDeUmaBiblioteca.dll
