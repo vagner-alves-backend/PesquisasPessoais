@@ -40,6 +40,14 @@ namespace SistemaDeUmaBiblioteca.Models
                 this._cpf = value;
             }
         }
+       
+        public Pessoa (string? name, string? sobrenome, string? cpf)
+        {
+            Name = name;
+            Sobrenome = sobrenome;
+            CPF = cpf;
+        }
+
         public string? GetName () => this._name;
         public string? GetSobrenome () => this._sobrenome;
         public string? GetCPF () => this._cpf;

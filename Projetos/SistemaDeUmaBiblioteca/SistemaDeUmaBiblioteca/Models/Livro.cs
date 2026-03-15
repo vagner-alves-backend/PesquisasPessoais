@@ -50,10 +50,32 @@ namespace SistemaDeUmaBiblioteca.Models
                 this._qntPaginas = value;
             }
         }
+        private string? _valor;
+        public string? Valor
+        {
+            get => this._valor;
+            set
+            {
+                if (string.IsNullOrWhiteSpace (value)) throw new Exception ("Favor informe o valor do livro...");
+                if (!double.TryParse (value, out double valor)) throw new Exception ("Valor invalido, favor informe um valor valido...");
+                if (valor < 0) throw new Exception ("O valor não pode ser negativo..."); 
+                this._valor = value;
+            }
+        }
+
+        public Livro (string? nameAltor, string? titulo, string? genero, string? qantPaginas, string? valor)
+        {
+            NameAltor = nameAltor;
+            Titulo = titulo;
+            Genero = genero;
+            QantPaginas = qantPaginas;
+            Valor = valor;
+        }
 
         public string? GetAltor () => this._altorName;
         public string? GetTitulo () => this._titulo;
         public string? GetGenero () => this._genero;
         public string? GetQntPaginas () => this._qntPaginas;
+        public string? GetValor () => this._valor;
     }
 }
