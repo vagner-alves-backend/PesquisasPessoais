@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\bin\Debug\net10.0\Delta.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\bin\Debug\net10.0\Delta.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\bin\Debug\net10.0\Delta.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\bin\Debug\net10.0\Delta.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\bin\Debug\net10.0\Delta.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\refint\Delta.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\Delta.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Matematica\Delta\Delta\obj\Debug\net10.0\ref\Delta.dll
