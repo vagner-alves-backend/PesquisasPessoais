@@ -11,27 +11,15 @@ namespace Calculadora.Models
 {
     public class Design_Calc
     {
-        private string? _first_number;
-        public string? First_Number
+        private string? _number;
+        public string? Number
         {
-            get => this._first_number;
+            get => this._number;
             set
             {
                 if (string.IsNullOrWhiteSpace (value)) throw new Exception ("Favor informe um valor.");
                 if (!double.TryParse (value, out double number)) throw new Exception ("Favor informe um valor valido.");
-                this._first_number = value;
-            }
-        }
-
-        private string? _second_number;
-        public string? Second_Number
-        {
-            get => this._second_number;
-            set
-            {
-                if (string.IsNullOrWhiteSpace (value)) throw new Exception ("Favor informe um valor.");
-                if (!double.TryParse (value, out double number)) throw new Exception ("Favor informe um valor valido.");
-                this._second_number = value;
+                this._number = value;
             }
         }
 
@@ -55,30 +43,26 @@ namespace Calculadora.Models
     
         public void Calc ()
         {
-            Console.Clear ();
-            string? parametro = "0000";
-            _to_design (parametro);
+            int ciclo = 0;
+            do
+            {
+                if (ciclo == 0)
+                {
+                    Console.Write ("Number: ");
+                    Number = Console.ReadLine ();
+                    ciclo = 1;
+                } else
+                {
+                    Console.Write ("Operador: ");
+                    Operador = Console.ReadLine ();
+                    ciclo = 2;
+                }
+            } while (_operador != "=");
+        }
 
-            Console.Write ("First Number: ");
-            First_Number = Console.ReadLine ();
-
-            Console.Clear ();
-            parametro = _first_number;
-            _to_design (parametro);
-
-            Console.Write ("Operador: ");
-            Operador = Console.ReadLine ();
-
-            Console.Clear ();
-            parametro = $"{parametro} {_operador}";
-            _to_design (parametro);
-
-            Console.Write ("Second Number: ");
-            Second_Number = Console.ReadLine ();
-
-            Console.Clear ();
-            parametro = $"{parametro} {Second_Number}";
-            _to_design (parametro);
+        private string? _calcular (string? current_number, string? previus_number, string? current_operador)
+        {
+            return "";
         }
         private void _to_design (string? parametro_info)
         {            
