@@ -1,5 +1,5 @@
 ﻿using Calculadora.Models;
-Design_Calc design = new();
+_Calc design = new();
 
 //bool _New_Calc = true;
 

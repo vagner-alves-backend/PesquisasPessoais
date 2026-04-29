@@ -9,7 +9,7 @@ using Microsoft.VisualBasic;
 
 namespace Calculadora.Models
 {
-    public class Design_Calc
+    public class _Calc
     {
         private string? _number;
         public string? Number
@@ -41,28 +41,74 @@ namespace Calculadora.Models
             }
         }
     
+        private double _resultado = 0;
         public void Calc ()
         {
+            Console.Clear ();
+
+            double number_previus = _resultado;
             int ciclo = 0;
+            int calc_mod = 0;
             do
             {
-                if (ciclo == 0)
+                try
                 {
-                    Console.Write ("Number: ");
-                    Number = Console.ReadLine ();
-                    ciclo = 1;
+                    if (ciclo == 0)
+                    {
+                        Console.Write ("Number: ");
+                        number_previus = _resultado;
+                        Number = Console.ReadLine ();
+                        ciclo = 1;
+
+                        _calcular ();
+                    } else
+                    {
+                        Console.Write ("Operador: ");
+                        Operador = Console.ReadLine ();
+                        ciclo = 0;
+                    }   
+                } catch (Exception ex)
+                {
+                    Console.Clear ();
+                    Console.WriteLine ($"\t[ERRO]: {ex.Message}");
+                    Console.WriteLine ("---------------------------------------------------");
+                }
+
+                Console.Clear ();
+                if (calc_mod < 3)
+                {
+                    calc_mod++;
                 } else
                 {
-                    Console.Write ("Operador: ");
-                    Operador = Console.ReadLine ();
-                    ciclo = 2;
+                    calc_mod = 2;
                 }
+                switch (calc_mod)
+                {
+                    case 1: Console.WriteLine ($"{_number} ? 0 = {_number}"); break;
+                    case 2: Console.WriteLine ($"{_resultado} {_operador} 0 = {_resultado}"); break;
+                    case 3: Console.WriteLine ($"{number_previus} {_operador} {_number} = {_resultado}"); break;
+                    default:
+                        Console.WriteLine ($"Calc_mod = {calc_mod}");
+                        Console.WriteLine ("\tNão entrou...");
+                        break;
+                }
+                
             } while (_operador != "=");
         }
 
-        private string? _calcular (string? current_number, string? previus_number, string? current_operador)
+        private void _calcular ()
         {
-            return "";
+            double number = Convert.ToDouble (this._number);
+            switch (this._operador)
+            {
+                case "+": _resultado += number; break;
+                case "-": _resultado -= number; break;
+                case ":": _resultado /= number; break;
+                case "x": _resultado *= number; break;
+                default:
+                    _resultado += number;
+                    break;
+            }
         }
         private void _to_design (string? parametro_info)
         {            
