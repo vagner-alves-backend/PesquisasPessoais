@@ -51,6 +51,7 @@ namespace Calculadora.Models
             int calc_mod = 0;
             do
             {
+                _to_design ();
                 try
                 {
                     if (ciclo == 0)
@@ -84,9 +85,9 @@ namespace Calculadora.Models
                 }
                 switch (calc_mod)
                 {
-                    case 1: Console.WriteLine ($"{_number} ? 0 = {_number}"); break;
-                    case 2: Console.WriteLine ($"{_resultado} {_operador} 0 = {_resultado}"); break;
-                    case 3: Console.WriteLine ($"{number_previus} {_operador} {_number} = {_resultado}"); break;
+                    case 1: Console.WriteLine ($"\t{_number} ? 0 = {_number}"); break;
+                    case 2: Console.WriteLine ($"\t{_resultado} {_operador} 0 = {_resultado}"); break;
+                    case 3: Console.WriteLine ($"\t{number_previus} {_operador} {_number} = {_resultado}"); break;
                     default:
                         Console.WriteLine ($"Calc_mod = {calc_mod}");
                         Console.WriteLine ("\tNão entrou...");
@@ -110,12 +111,9 @@ namespace Calculadora.Models
                     break;
             }
         }
-        private void _to_design (string? parametro_info)
+        private void _to_design ()
         {            
             Console.WriteLine (
-                "|\tCalculadora \n"+
-                "--------------------------\n"+
-                $"| {parametro_info}\n"+
                 "--------------------------\n"+
                 "|     C     |     <-     |\n"+
                 "| 7      8      9   | x  |\n"+
