@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "PFP7CMDsRZg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vágner Alves\\OneDrive\\Documentos\\_Meus-Repositorios\\PesquisasPessoais\\Eventos\\EventosDeTerminal\\Terminal_Gui\\Terminal_Gui\\Terminal_Gui.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\colorhelper\\1.8.1\\colorhelper.1.8.1.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\jetbrains.annotations\\2025.2.4\\jetbrains.annotations.2025.2.4.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\markdig\\1.1.3\\markdig.1.1.3.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.6\\microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.6\\microsoft.extensions.logging.abstractions.10.0.6.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\onigwrap\\1.0.10\\onigwrap.1.0.10.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\system.io.abstractions\\22.1.1\\system.io.abstractions.22.1.1.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\terminal.gui\\2.0.1\\terminal.gui.2.0.1.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\testableio.system.io.abstractions\\22.1.1\\testableio.system.io.abstractions.22.1.1.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\testableio.system.io.abstractions.wrappers\\22.1.1\\testableio.system.io.abstractions.wrappers.22.1.1.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\testably.abstractions.filesystem.interface\\10.1.0\\testably.abstractions.filesystem.interface.10.1.0.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\textmatesharp\\2.0.3\\textmatesharp.2.0.3.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\textmatesharp.grammars\\2.0.3\\textmatesharp.grammars.2.0.3.nupkg.sha512",
+    "C:\\Users\\Vágner Alves\\.nuget\\packages\\wcwidth\\4.0.1\\wcwidth.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
