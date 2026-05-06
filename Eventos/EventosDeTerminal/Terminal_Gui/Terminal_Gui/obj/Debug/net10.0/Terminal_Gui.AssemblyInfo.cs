@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Terminal_Gui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60721fe4876afa88e07896f9edef5ebc3208eb2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e122ba96b55e01b49fc0b7ad75446c41058c735e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Terminal_Gui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Terminal_Gui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

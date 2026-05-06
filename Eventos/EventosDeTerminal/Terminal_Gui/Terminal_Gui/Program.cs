@@ -75,19 +75,27 @@ void Order_Of_Operation (string? parametro)
     {
         if (parametro == "<")
         {
-            int index = tela.Text.Length;
-            isOperator = tela.Text[index -1].ToString() switch
+            if (secondNumber != " ")
             {
-                "+" or "-" or "x" or ":" => true,
-                _ => false  
-            };
-
-            if (isOperator)
+                secondNumber = secondNumber.Substring(0, secondNumber.Length -1);
+                if (secondNumber.Length == 0)
+                {
+                    secondNumber = " ";
+                }
+                tela.Text = firstNumber + seletedOperator + secondNumber;
+            } else if (seletedOperator != " ")
             {
                 seletedOperator = " ";
-                secondNumber = " ";
+                tela.Text = firstNumber;
+            } else if (firstNumber != " ")
+            {
+                firstNumber = firstNumber.Substring(0, firstNumber.Length - 1);
+                if (firstNumber.Length == 0)
+                {
+                    firstNumber = " ";
+                }
+                tela.Text = firstNumber;
             }
-            tela.Text = tela.Text.Substring(0, tela.Text.Length -1);
         } else
         {
             firstNumber = " ";
@@ -116,9 +124,13 @@ void Form_the_operation (string? parametro)
         {
             string? resultado = Perform_Operation (secondNumber, firstNumber, seletedOperator);
             tela.Text = resultado;
+            firstNumber = resultado;
+            secondNumber = " ";
+            seletedOperator = " ";
         } else if (secondNumber == " ")
         {
             tela.Text = firstNumber;
+            seletedOperator = " ";
         } else
         {
             tela.Text = "0";
