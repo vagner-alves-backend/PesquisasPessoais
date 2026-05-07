@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\bin\Debug\net10.0\LendoProjetos.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\bin\Debug\net10.0\LendoProjetos.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\bin\Debug\net10.0\LendoProjetos.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\bin\Debug\net10.0\LendoProjetos.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\bin\Debug\net10.0\LendoProjetos.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\refint\LendoProjetos.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\LendoProjetos.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\_Meus-Repositorios\PesquisasPessoais\Projetos\ProjetoCalculadora\Modelos_\LendoOperacoes\LendoProjetos\obj\Debug\net10.0\ref\LendoProjetos.dll
