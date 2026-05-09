@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LendoProjetos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4dd4681d20e2eaa6ad7997cbb3e8f4875908bac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c12ddf9d7f274ffc0513d3a5bf1d2c1f484c3f24")]
 [assembly: System.Reflection.AssemblyProductAttribute("LendoProjetos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LendoProjetos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
